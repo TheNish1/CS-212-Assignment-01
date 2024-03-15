@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Lib Management Assignment:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Lib_Management_Assignment_jar</output-path>
+    <root id="archive" name="Lib Management Assignment.jar">
+      <element id="module-output" name="Lib Management Assignment" />
+    </root>
+  </artifact>
+</component>
