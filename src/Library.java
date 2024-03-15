@@ -209,14 +209,14 @@ public class Library {
         System.out.println("BOOK CATALOGUE");
         int i =0;
         if (bookCount!=0) {
-            System.out.printf("%-15s%-15s%-15s%-15s%-15s%n", "TITLES","AUTHORS","GENRES","ID", "AVAILABLE");
+            System.out.printf("%-20s%-20s%-20s%-20s%-20s%n", "TITLES","AUTHORS","GENRES","ID", "AVAILABLE");
             for (i=0; i<bookCount; i++)
             {
-                System.out.printf("%-15s", listofBooks[i].title);
-                System.out.printf("%-15s",listofBooks[i].author);
-                System.out.printf("%-15s",listofBooks[i].genre);
-                System.out.printf("%-15s",listofBooks[i].bookID);
-                System.out.printf("%-15s%s",listofBooks[i].isAvailable,"\n");
+                System.out.printf("%-20s", listofBooks[i].title);
+                System.out.printf("%-20s",listofBooks[i].author);
+                System.out.printf("%-20s",listofBooks[i].genre);
+                System.out.printf("%-20s",listofBooks[i].bookID);
+                System.out.printf("%-20s%s",listofBooks[i].isAvailable,"\n");
                 isSuccess = true;
             }
         }
@@ -250,12 +250,12 @@ public class Library {
 
             if(bookFound)
             {
-                System.out.printf("%-15s%-15s%-15s%-15s%-15s%n", "TITLE","AUTHOR","GENRE","ID", "AVAILABLE");
-                System.out.printf("%-15s",listofBooks[count].title);
-                System.out.printf("%-15s",listofBooks[count].author);
-                System.out.printf("%-15s",listofBooks[count].genre);
-                System.out.printf("%-15s",listofBooks[count].bookID);
-                System.out.printf("%-15s%s",listofBooks[count].isAvailable,"\n");
+                System.out.printf("%-20s%-20s%-20s%-20s%-20s%n", "TITLE","AUTHOR","GENRE","ID", "AVAILABLE");
+                System.out.printf("%-20s",listofBooks[count].title);
+                System.out.printf("%-20s",listofBooks[count].author);
+                System.out.printf("%-20s",listofBooks[count].genre);
+                System.out.printf("%-20s",listofBooks[count].bookID);
+                System.out.printf("%-20s%s",listofBooks[count].isAvailable,"\n");
                 isSuccess = true;
 
             }
@@ -297,12 +297,12 @@ public class Library {
 
             if(bookFound)
             {
-                System.out.printf("%-15s%-15s%-15s%-15s%-15s%n", "TITLE","AUTHOR","GENRE","ID", "AVAILABLE");
-                System.out.printf("%-15s",listofBooks[count].title);
-                System.out.printf("%-15s",listofBooks[count].author);
-                System.out.printf("%-15s",listofBooks[count].genre);
-                System.out.printf("%-15s",listofBooks[count].bookID);
-                System.out.printf("%-15s%s",listofBooks[count].isAvailable,"\n");
+                System.out.printf("%-20s%-20s%-20s%-20s%-20s%n", "TITLE","AUTHOR","GENRE","ID", "AVAILABLE");
+                System.out.printf("%-20s",listofBooks[count].title);
+                System.out.printf("%-20s",listofBooks[count].author);
+                System.out.printf("%-20s",listofBooks[count].genre);
+                System.out.printf("%-20s",listofBooks[count].bookID);
+                System.out.printf("%-20s%s",listofBooks[count].isAvailable,"\n");
                 isSuccess = true;
 
             }
