@@ -169,6 +169,7 @@ public class Library {
                 {
                     break;
                 }
+                System.out.println("1 Operation Successful");
             }
 
             int userBookIndex;
@@ -177,11 +178,12 @@ public class Library {
             {
                 if(Objects.equals(listofUsers[userIndex].getBookatIndex(userBookIndex), bookName))
                 {
+                    System.out.println("2 Operation Successful");
                     break;
                 }
                 //Return the book
                 listofUsers[userIndex].booktoReturn(userBookIndex);
-                isSuccess=false;
+                System.out.println("3 Operation Successful");
 
                 //where book exists in catalogue
                 int bookIndex;
@@ -189,18 +191,22 @@ public class Library {
                 {
                     if (Objects.equals(listofBooks[bookIndex].title, bookName))
                     {
+                        System.out.println("4 Operation Successful");
                         break;
                     }
                 }
                 //Make book available again
                 listofBooks[bookIndex].isAvailable=true;
+                System.out.println("5 Operation Successful");
                 isSuccess=true;
             }
         }
         if (isSuccess){
+            System.out.println("7 Operation Successful");
             System.out.println("\nOperation Successful\n\n");
         }
         else {
+            System.out.println("8 Operation Successful");
             System.out.println("Error.");}
     }
 
