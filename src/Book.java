@@ -16,6 +16,4 @@ class Book
         //Random 5 digit ID
         this.bookID = random.nextInt(100000-10000)+10000;
     }
-
-
 }

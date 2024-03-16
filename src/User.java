@@ -8,7 +8,7 @@ class User
     private int userID;
     private String name;
     private String contact;
-    private String[] borrowedBooks;
+    private String[] borrowedBooks = new String[6];
     private int bookCurrentEmptySlot=0;
 
     //Setter for books
@@ -18,7 +18,7 @@ class User
         boolean isBookAdded = false;
         while(isBookAdded==false)
         {
-            if(this.borrowedBooks[bookCurrentEmptySlot].isEmpty())
+            if(this.borrowedBooks[bookCurrentEmptySlot]==null)
             {
                 this.borrowedBooks[bookCurrentEmptySlot] = bookName;
                 isBookAdded=true;

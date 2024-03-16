@@ -173,7 +173,7 @@ public class Library {
 
             int userBookIndex;
             //Where is book in user's array
-            for(userBookIndex=0;!listofUsers[userIndex].getBookatIndex(userBookIndex).isEmpty(); userBookIndex++)
+            for(userBookIndex=0;!(listofUsers[userIndex].getBookatIndex(userBookIndex)==null); userBookIndex++)
             {
                 if(Objects.equals(listofUsers[userIndex].getBookatIndex(userBookIndex), bookName))
                 {
@@ -181,6 +181,7 @@ public class Library {
                 }
                 //Return the book
                 listofUsers[userIndex].booktoReturn(userBookIndex);
+                isSuccess=false;
 
                 //where book exists in catalogue
                 int bookIndex;
