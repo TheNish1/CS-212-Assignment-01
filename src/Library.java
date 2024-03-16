@@ -137,6 +137,7 @@ public class Library {
                         }
                     }
                     listofUsers[i].booktoBorrow(bookName);
+                    listofBooks[bookIndex].isAvailable=false;
                     isSuccess=true;
                 }
             }
@@ -169,21 +170,17 @@ public class Library {
                 {
                     break;
                 }
-                System.out.println("1 Operation Successful");
             }
 
             int userBookIndex;
             //Where is book in user's array
-            for(userBookIndex=0;!(listofUsers[userIndex].getBookatIndex(userBookIndex)==null); userBookIndex++)
-            {
-                if(Objects.equals(listofUsers[userIndex].getBookatIndex(userBookIndex), bookName))
-                {
-                    System.out.println("2 Operation Successful");
+            for(userBookIndex=0;!(listofUsers[userIndex].getBookatIndex(userBookIndex)==null); userBookIndex++) {
+                if (Objects.equals(listofUsers[userIndex].getBookatIndex(userBookIndex), bookName)) {
                     break;
                 }
+            }
                 //Return the book
                 listofUsers[userIndex].booktoReturn(userBookIndex);
-                System.out.println("3 Operation Successful");
 
                 //where book exists in catalogue
                 int bookIndex;
@@ -191,22 +188,18 @@ public class Library {
                 {
                     if (Objects.equals(listofBooks[bookIndex].title, bookName))
                     {
-                        System.out.println("4 Operation Successful");
                         break;
                     }
                 }
                 //Make book available again
                 listofBooks[bookIndex].isAvailable=true;
-                System.out.println("5 Operation Successful");
                 isSuccess=true;
             }
-        }
+
         if (isSuccess){
-            System.out.println("7 Operation Successful");
             System.out.println("\nOperation Successful\n\n");
         }
         else {
-            System.out.println("8 Operation Successful");
             System.out.println("Error.");}
     }
 
